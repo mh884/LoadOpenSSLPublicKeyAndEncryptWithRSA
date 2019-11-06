@@ -59,7 +59,7 @@
             return true;
         }
 
-        private static RSACryptoServiceProvider CreateRsaProviderFromPublicKey(byte[] x509Key)
+        private static RSA CreateRsaProviderFromPublicKey(byte[] x509Key)
         {
             // encoded OID sequence for  PKCS #1 rsaEncryption szOID_RSA_RSA = "1.2.840.113549.1.1.1"
             byte[] seqOid = { 0x30, 0x0D, 0x06, 0x09, 0x2A, 0x86, 0x48, 0x86, 0xF7, 0x0D, 0x01, 0x01, 0x01, 0x05, 0x00 };
